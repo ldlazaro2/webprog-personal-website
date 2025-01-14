@@ -1,0 +1,11 @@
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container > div {
+    flex: 1;
+    padding: 10px;
+}

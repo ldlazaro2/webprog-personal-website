@@ -1,0 +1,208 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #4f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cover Page Styling */
+.cover-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d2b49b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+.cover-content h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.cover-content p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.cover-content button {
+    padding: 10px 20px;
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cover-content button:hover {
+    background-color: #3e2723;
+}
+
+/* Profile Page Styling */
+.profile-page {
+    display: block;
+    margin: 20px;
+}
+
+header {
+    background-color: #d2b49b;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+h2, h3 {
+    color: #5d4037;
+}
+
+a {
+    color: #3e2723;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #c7b79e;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f5f5f5;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Gallery Styling */
+.gallery {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Button Styles */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #3e2723;
+}
+
+/* Feedback Form Styling */
+#feedback {
+    background-color: #fff9e6;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#feedback h3 {
+    color: #5d4037;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #5d4037;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e2723;
+}
+
+/* Vue.js Feedback Form - Submitted state */
+#feedback div {
+    text-align: center;
+    color: #5d4037;
+    font-size: 1.2rem;
+}
