@@ -6,6 +6,7 @@ const app2 = Vue.createApp({
           {name: '', url: 'https://github.com/ldlazaro2/webprog-personal-website/blob/main/home/pictures/dogs2.jpg?raw=true'},
           {name: '', url: 'https://github.com/ldlazaro2/webprog-personal-website/blob/main/home/pictures/family.jpg?raw=true'},
           {name: '', url: 'https://github.com/ldlazaro2/webprog-personal-website/blob/main/home/pictures/myself.jpg?raw=true'},
+          {name: '', url: 'https://github.com/ldlazaro2/webprog-personal-website/blob/main/home/pictures/person.jpg?raw=true'},
         ]
       }
     },
