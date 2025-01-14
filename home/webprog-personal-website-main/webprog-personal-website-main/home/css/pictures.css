@@ -1,0 +1,44 @@
+/* Container for the images */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts grid based on available space */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    justify-items: center; /* Center images in their respective grid items */
+  }
+  
+  /* Individual image item */
+  .image-item {
+    background-color: #f8f9fa; /* Light background for each image block */
+    border-radius: 8px; /* Rounded corners for image block */
+    padding: 10px;
+    text-align: center; /* Center text under image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    overflow: hidden; /* Prevents images from overflowing their containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Resize images to be uniform */
+  .image-size {
+    width: 100%; /* Ensure images fill the container width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for images */
+  .image-size:hover {
+    transform: scale(1.05); /* Slightly enlarge image when hovered */
+  }
+  
+  /* Optional: Style for the text below the image */
+  .image-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
